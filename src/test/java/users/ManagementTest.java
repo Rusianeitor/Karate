@@ -12,14 +12,16 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class ManagementTest {
 
     @Test
     void testParallel(){
         //Results results = Runner.path("classpath:users").outputCucumberJson(true).tags("~@ignore").parallel(4);
         Results results = Runner.path("classpath:geonames").outputCucumberJson(true).tags("~@ignore").parallel(4);
-
         generateReport(results.getReportDir());
+        assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
     public static void generateReport(String karateOutputPath){
