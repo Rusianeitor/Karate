@@ -10,6 +10,7 @@ Feature: Get geographical data of a country
     * def responseFailedParameter = read("fail-parsing-parameter-get.json")
     * def responseDataColombia = read("response-data-colombia-get.json")
 
+  @Obtener-data-de-paises
   Scenario Outline: Get geographical data of a country
     When method get
     Then status 200
@@ -24,20 +25,48 @@ Feature: Get geographical data of a country
     |8       |-8f      |
     |-75     |80       |
 
+  @Obtener-data-de-colombia
   Scenario Outline: Get geographical data of Colombia
     When method get
     Then status 200
     And match $ == responseDataColombia
 
     Examples:
-      |latitude|longitude|
-      |4       |-72      |
+    |latitude|longitude|
+    |4       |-74      |
 
-  Scenario Outline: Get geographical data of Colombia
+  @Obtener-data-de-paises-parametros-invalidos
+  Scenario Outline: Get geographical data of a country with parameters invalid
     When method get
     Then status 200
-    And match $ == responseDataColombia
+    And match $ == responseFailedParameter
 
     Examples:
-      |latitude|longitude|
-      |4       |-72      |
+    |latitude|longitude|
+    |ñ       |-72      |
+    |8       |a        |
+    |.       |-5       |
+    |%&$     |aas      |
+    |8       |-a8f     |
+
+  @Obtener-data-de-paises-sin-info
+  Scenario Outline: Get geographical data of a country that does not have information
+    When method get
+    Then status 200
+    And match $ == {"status": {"message": "no timezone information found for lat/lng","value": 15}}
+
+    Examples:
+    |latitude|longitude|
+    |90      |70       |
+    |90      |99       |
+
+  @Obtener-data-de-paises-lat-lng-invalid
+  Scenario Outline: Get geographical data of a country with latitude and longitude invalid
+    When method get
+    Then status 200
+    And match $ == {"status": {"message": "invalid lat/lng","value": 14}}
+
+    Examples:
+    |latitude|longitude|
+    |81      |901      |
+    |700     |801      |

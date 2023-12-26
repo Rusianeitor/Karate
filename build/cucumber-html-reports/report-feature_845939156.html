@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>curso_karate</td>
-      <td>26 dic. 2023, 18:05</td>
+      <td>26 dic. 2023, 18:48</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">geonames/get/geographical-data-get.feature</td>
-          <td      class="passed"    >54</td>
+          <td      class="passed"    >144</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">54</td>
+          <td class="total">144</td>
 
-          <td  class="passed"    >6</td>
+          <td  class="passed"    >16</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td class="total">16</td>
 
-          <td class="duration" data-value="3506915700">3.506</td>
+          <td class="duration" data-value="7356054200">7.356</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.048</span>
+  <span class="lead-duration duration">0.051</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -225,401 +225,6 @@ $(document).ready(function() {
   </div>
 
   <div id="steps-2" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">url api.baseUrl</span>
-
-  <span class="lead-duration duration">0.004</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">path endpoint.geoPath</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
-
-  <span class="lead-duration duration">0.036</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.620</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Get geographical data of a country</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-3" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method get</span>
-
-  <span class="lead-duration duration">0.608</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>18:05:08.680 request:
-1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72&amp;formatted=true&amp;lat=4&amp;username=karate
-1 &gt; Host: api.geonames.org
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-18:05:09.118 response time in milliseconds: 433
-1 &lt; 200
-1 &lt; Date: Tue, 26 Dec 2023 23:05:13 GMT
-1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; X-Frame-Options: sameorigin
-1 &lt; Cache-Control: no-cache
-1 &lt; Keep-Alive: timeout=5, max=100
-1 &lt; Connection: Keep-Alive
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Content-Type: application/json;charset=UTF-8
-{
-  &quot;sunrise&quot;: &quot;2023-12-27 05:52&quot;,
-  &quot;lng&quot;: -72,
-  &quot;countryCode&quot;: &quot;CO&quot;,
-  &quot;gmtOffset&quot;: -5,
-  &quot;rawOffset&quot;: -5,
-  &quot;sunset&quot;: &quot;2023-12-27 17:45&quot;,
-  &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
-  &quot;dstOffset&quot;: -5,
-  &quot;countryName&quot;: &quot;Colombia&quot;,
-  &quot;time&quot;: &quot;2023-12-26 18:05&quot;,
-  &quot;lat&quot;: 4
-}
-
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">match $ == responseSuccessful</span>
-
-  <span class="lead-duration duration">0.012</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-</div>
-
-
-  <span class="lead-duration duration">0.048</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
-
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-6" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -682,7 +287,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.039</span>
 
 </div>
 
@@ -709,7 +314,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -798,13 +403,15 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1846163079.html">@Obtener-data-de-paises</a>
 </div>
 
 
-  <span class="lead-duration duration">0.636</span>
+  <span class="lead-duration duration">0.610</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -817,14 +424,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -836,7 +443,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -844,7 +451,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.609</span>
+  <span class="lead-duration duration">0.600</span>
 
 </div>
 
@@ -858,22 +465,22 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>18:05:08.679 request:
-1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-8&amp;formatted=true&amp;lat=8&amp;username=karate
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>18:48:04.251 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72&amp;formatted=true&amp;lat=4&amp;username=karate
 1 &gt; Host: api.geonames.org
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:05:09.120 response time in milliseconds: 434
+18:48:04.676 response time in milliseconds: 424
 1 &lt; 200
-1 &lt; Date: Tue, 26 Dec 2023 23:05:13 GMT
-1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; X-Frame-Options: sameorigin
 1 &lt; Cache-Control: no-cache
@@ -882,17 +489,17 @@ $(document).ready(function() {
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Content-Type: application/json;charset=UTF-8
 {
-  &quot;sunrise&quot;: &quot;2023-12-27 06:43&quot;,
-  &quot;lng&quot;: -8,
-  &quot;countryCode&quot;: &quot;CI&quot;,
-  &quot;gmtOffset&quot;: 0,
-  &quot;rawOffset&quot;: 0,
-  &quot;sunset&quot;: &quot;2023-12-27 18:22&quot;,
-  &quot;timezoneId&quot;: &quot;Africa/Abidjan&quot;,
-  &quot;dstOffset&quot;: 0,
-  &quot;countryName&quot;: &quot;Ivory Coast&quot;,
-  &quot;time&quot;: &quot;2023-12-26 23:05&quot;,
-  &quot;lat&quot;: 8
+  &quot;sunrise&quot;: &quot;2023-12-27 05:52&quot;,
+  &quot;lng&quot;: -72,
+  &quot;countryCode&quot;: &quot;CO&quot;,
+  &quot;gmtOffset&quot;: -5,
+  &quot;rawOffset&quot;: -5,
+  &quot;sunset&quot;: &quot;2023-12-27 17:45&quot;,
+  &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
+  &quot;dstOffset&quot;: -5,
+  &quot;countryName&quot;: &quot;Colombia&quot;,
+  &quot;time&quot;: &quot;2023-12-26 18:48&quot;,
+  &quot;lat&quot;: 4
 }
 
 </pre>
@@ -941,7 +548,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match $ == responseSuccessful</span>
 
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.009</span>
 
 </div>
 
@@ -979,10 +586,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.046</span>
+  <span class="lead-duration duration">0.052</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -995,14 +602,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1014,7 +621,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1077,7 +684,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.040</span>
 
 </div>
 
@@ -1104,7 +711,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -1131,7 +738,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -1193,10 +800,409 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1846163079.html">@Obtener-data-de-paises</a>
 </div>
 
 
-  <span class="lead-duration duration">0.636</span>
+  <span class="lead-duration duration">0.608</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.598</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>18:48:04.251 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-8&amp;formatted=true&amp;lat=8&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:04.675 response time in milliseconds: 421
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2023-12-27 06:43&quot;,
+  &quot;lng&quot;: -8,
+  &quot;countryCode&quot;: &quot;CI&quot;,
+  &quot;gmtOffset&quot;: 0,
+  &quot;rawOffset&quot;: 0,
+  &quot;sunset&quot;: &quot;2023-12-27 18:22&quot;,
+  &quot;timezoneId&quot;: &quot;Africa/Abidjan&quot;,
+  &quot;dstOffset&quot;: 0,
+  &quot;countryName&quot;: &quot;Ivory Coast&quot;,
+  &quot;time&quot;: &quot;2023-12-26 23:48&quot;,
+  &quot;lat&quot;: 8
+}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == responseSuccessful</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.053</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.041</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1846163079.html">@Obtener-data-de-paises</a>
+</div>
+
+
+  <span class="lead-duration duration">0.611</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
@@ -1239,7 +1245,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.609</span>
+  <span class="lead-duration duration">0.597</span>
 
 </div>
 
@@ -1257,7 +1263,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>18:05:08.679 request:
+        <pre>18:48:04.252 request:
 1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72.5&amp;formatted=true&amp;lat=4.2&amp;username=karate
 1 &gt; Host: api.geonames.org
 1 &gt; Connection: Keep-Alive
@@ -1265,10 +1271,10 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:05:09.118 response time in milliseconds: 434
+18:48:04.675 response time in milliseconds: 420
 1 &lt; 200
-1 &lt; Date: Tue, 26 Dec 2023 23:05:13 GMT
-1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; X-Frame-Options: sameorigin
 1 &lt; Cache-Control: no-cache
@@ -1286,7 +1292,7 @@ $(document).ready(function() {
   &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
   &quot;dstOffset&quot;: -5,
   &quot;countryName&quot;: &quot;Colombia&quot;,
-  &quot;time&quot;: &quot;2023-12-26 18:05&quot;,
+  &quot;time&quot;: &quot;2023-12-26 18:48&quot;,
   &quot;lat&quot;: 4.2
 }
 
@@ -1336,7 +1342,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match $ == responseSuccessful</span>
 
-  <span class="lead-duration duration">0.027</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -1374,7 +1380,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.048</span>
+  <span class="lead-duration duration">0.052</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
@@ -1472,7 +1478,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.041</span>
 
 </div>
 
@@ -1499,7 +1505,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -1526,7 +1532,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1553,7 +1559,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1588,10 +1594,12 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1846163079.html">@Obtener-data-de-paises</a>
 </div>
 
 
-  <span class="lead-duration duration">0.622</span>
+  <span class="lead-duration duration">0.615</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
@@ -1634,7 +1642,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.610</span>
+  <span class="lead-duration duration">0.609</span>
 
 </div>
 
@@ -1652,7 +1660,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-20" class="collapse collapsable-details">
-        <pre>18:05:08.680 request:
+        <pre>18:48:04.251 request:
 1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72&amp;formatted=true&amp;lat=0&amp;username=karate
 1 &gt; Host: api.geonames.org
 1 &gt; Connection: Keep-Alive
@@ -1660,10 +1668,10 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:05:09.119 response time in milliseconds: 433
+18:48:04.688 response time in milliseconds: 437
 1 &lt; 200
-1 &lt; Date: Tue, 26 Dec 2023 23:05:13 GMT
-1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; X-Frame-Options: sameorigin
 1 &lt; Cache-Control: no-cache
@@ -1681,7 +1689,7 @@ $(document).ready(function() {
   &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
   &quot;dstOffset&quot;: -5,
   &quot;countryName&quot;: &quot;Colombia&quot;,
-  &quot;time&quot;: &quot;2023-12-26 18:05&quot;,
+  &quot;time&quot;: &quot;2023-12-26 18:48&quot;,
   &quot;lat&quot;: 0
 }
 
@@ -1731,7 +1739,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match $ == responseSuccessful</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -1983,10 +1991,12 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1846163079.html">@Obtener-data-de-paises</a>
 </div>
 
 
-  <span class="lead-duration duration">0.400</span>
+  <span class="lead-duration duration">0.421</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
@@ -2029,7 +2039,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.400</span>
+  <span class="lead-duration duration">0.421</span>
 
 </div>
 
@@ -2047,7 +2057,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-25" class="collapse collapsable-details">
-        <pre>18:05:09.151 request:
+        <pre>18:48:04.711 request:
 1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-8f&amp;formatted=true&amp;lat=8&amp;username=karate
 1 &gt; Host: api.geonames.org
 1 &gt; Connection: Keep-Alive
@@ -2055,10 +2065,10 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:05:09.548 response time in milliseconds: 397
+18:48:05.132 response time in milliseconds: 420
 1 &lt; 200
-1 &lt; Date: Tue, 26 Dec 2023 23:05:14 GMT
-1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; X-Frame-Options: sameorigin
 1 &lt; Cache-Control: no-cache
@@ -2076,7 +2086,7 @@ $(document).ready(function() {
   &quot;timezoneId&quot;: &quot;Africa/Abidjan&quot;,
   &quot;dstOffset&quot;: 0,
   &quot;countryName&quot;: &quot;Ivory Coast&quot;,
-  &quot;time&quot;: &quot;2023-12-26 23:05&quot;,
+  &quot;time&quot;: &quot;2023-12-26 23:48&quot;,
   &quot;lat&quot;: 8
 }
 
@@ -2378,10 +2388,12 @@ $(document).ready(function() {
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1846163079.html">@Obtener-data-de-paises</a>
 </div>
 
 
-  <span class="lead-duration duration">0.388</span>
+  <span class="lead-duration duration">0.394</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
@@ -2424,7 +2436,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.388</span>
+  <span class="lead-duration duration">0.394</span>
 
 </div>
 
@@ -2442,7 +2454,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-30" class="collapse collapsable-details">
-        <pre>18:05:09.164 request:
+        <pre>18:48:04.705 request:
 1 &gt; GET http://api.geonames.org/timezoneJSON?lng=80&amp;formatted=true&amp;lat=-75&amp;username=karate
 1 &gt; Host: api.geonames.org
 1 &gt; Connection: Keep-Alive
@@ -2450,10 +2462,10 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-18:05:09.550 response time in milliseconds: 385
+18:48:05.097 response time in milliseconds: 391
 1 &lt; 200
-1 &lt; Date: Tue, 26 Dec 2023 23:05:14 GMT
-1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; X-Frame-Options: sameorigin
 1 &lt; Cache-Control: no-cache
@@ -2469,7 +2481,7 @@ $(document).ready(function() {
   &quot;timezoneId&quot;: &quot;Antarctica/Davis&quot;,
   &quot;dstOffset&quot;: 7,
   &quot;countryName&quot;: &quot;Antarctica&quot;,
-  &quot;time&quot;: &quot;2023-12-27 06:05&quot;,
+  &quot;time&quot;: &quot;2023-12-27 06:48&quot;,
   &quot;lat&quot;: -75
 }
 
@@ -2518,6 +2530,3895 @@ $(document).ready(function() {
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match $ == responseSuccessful</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.005</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3077064410.html">@Obtener-data-de-colombia</a>
+</div>
+
+
+  <span class="lead-duration duration">0.420</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of Colombia</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-34" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.419</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>18:48:04.711 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-74&amp;formatted=true&amp;lat=4&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.129 response time in milliseconds: 418
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2023-12-27 06:00&quot;,
+  &quot;lng&quot;: -74,
+  &quot;countryCode&quot;: &quot;CO&quot;,
+  &quot;gmtOffset&quot;: -5,
+  &quot;rawOffset&quot;: -5,
+  &quot;sunset&quot;: &quot;2023-12-27 17:53&quot;,
+  &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
+  &quot;dstOffset&quot;: -5,
+  &quot;countryName&quot;: &quot;Colombia&quot;,
+  &quot;time&quot;: &quot;2023-12-26 18:48&quot;,
+  &quot;lat&quot;: 4
+}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == responseDataColombia</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.004</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2499698828.html">@Obtener-data-de-paises-parametros-invalidos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.384</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country with parameters invalid</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.383</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>18:48:04.720 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72&amp;formatted=true&amp;lat=%C3%B1&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.102 response time in milliseconds: 381
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:09 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == responseFailedParameter</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-42" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2499698828.html">@Obtener-data-de-paises-parametros-invalidos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.380</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country with parameters invalid</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.380</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>18:48:05.107 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=a&amp;formatted=true&amp;lat=8&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.485 response time in milliseconds: 378
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == responseFailedParameter</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-47">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2499698828.html">@Obtener-data-de-paises-parametros-invalidos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.384</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-48">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country with parameters invalid</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-48" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-49">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-49" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.384</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>18:48:05.111 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-5&amp;formatted=true&amp;lat=.&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.494 response time in milliseconds: 382
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == responseFailedParameter</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.004</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-51">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-51" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-52">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-52" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2499698828.html">@Obtener-data-de-paises-parametros-invalidos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.380</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-53">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country with parameters invalid</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-53" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-54">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-54" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.379</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>18:48:05.140 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=aas&amp;formatted=true&amp;lat=%25%26%24&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.519 response time in milliseconds: 379
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == responseFailedParameter</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-56">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-56" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-57">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-57" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2499698828.html">@Obtener-data-de-paises-parametros-invalidos</a>
+</div>
+
+
+  <span class="lead-duration duration">0.385</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-58">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country with parameters invalid</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-58" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-59">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-59" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.384</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>18:48:05.139 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-a8f&amp;formatted=true&amp;lat=8&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.523 response time in milliseconds: 383
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == responseFailedParameter</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-62">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-62" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_756299303.html">@Obtener-data-de-paises-sin-info</a>
+</div>
+
+
+  <span class="lead-duration duration">0.381</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-63">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country that does not have information</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-63" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-64">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-64" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.381</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-65">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-65" class="collapse collapsable-details">
+        <pre>18:48:05.494 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=70&amp;formatted=true&amp;lat=90&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.873 response time in milliseconds: 379
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 87
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;no timezone information found for lat/lng&quot;,
+  &quot;value&quot;: 15
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == {&quot;status&quot;: {&quot;message&quot;: &quot;no timezone information found for lat/lng&quot;,&quot;value&quot;: 15}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-66">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-66" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-67">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-67" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_756299303.html">@Obtener-data-de-paises-sin-info</a>
+</div>
+
+
+  <span class="lead-duration duration">0.380</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-68">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country that does not have information</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-68" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-69">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-69" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.380</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-70">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-70" class="collapse collapsable-details">
+        <pre>18:48:05.502 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=99&amp;formatted=true&amp;lat=90&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.880 response time in milliseconds: 377
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 87
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;no timezone information found for lat/lng&quot;,
+  &quot;value&quot;: 15
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == {&quot;status&quot;: {&quot;message&quot;: &quot;no timezone information found for lat/lng&quot;,&quot;value&quot;: 15}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-71">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-71" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-72">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-72" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2179655387.html">@Obtener-data-de-paises-lat-lng-invalid</a>
+</div>
+
+
+  <span class="lead-duration duration">0.375</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-73">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country with latitude and longitude invalid</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-73" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-74">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-74" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.375</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-75">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-75" class="collapse collapsable-details">
+        <pre>18:48:05.526 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=901&amp;formatted=true&amp;lat=81&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.900 response time in milliseconds: 373
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 61
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;invalid lat/lng&quot;,
+  &quot;value&quot;: 14
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == {&quot;status&quot;: {&quot;message&quot;: &quot;invalid lat/lng&quot;,&quot;value&quot;: 14}}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-76">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-76" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-77">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-77" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url api.baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#* path geoPath = '/timezoneJSON'</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path endpoint.geoPath</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">params {username: #(user.name), formatted: true, lat: #(latitude), lng: #(longitude)}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseSuccessful = read(&quot;successful-response-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseFailedParameter = read(&quot;fail-parsing-parameter-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseDataColombia = read(&quot;response-data-colombia-get.json&quot;)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2179655387.html">@Obtener-data-de-paises-lat-lng-invalid</a>
+</div>
+
+
+  <span class="lead-duration duration">0.375</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-78">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Get geographical data of a country with latitude and longitude invalid</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-78" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-79">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-79" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.374</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-80">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-80" class="collapse collapsable-details">
+        <pre>18:48:05.530 request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=801&amp;formatted=true&amp;lat=700&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:48:05.904 response time in milliseconds: 373
+1 &lt; 200
+1 &lt; Date: Tue, 26 Dec 2023 23:48:10 GMT
+1 &lt; Server: Apache/2.4.37 (centos) mod_jk/1.2.48 OpenSSL/1.1.1g
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 61
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;invalid lat/lng&quot;,
+  &quot;value&quot;: 14
+}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match $ == {&quot;status&quot;: {&quot;message&quot;: &quot;invalid lat/lng&quot;,&quot;value&quot;: 14}}</span>
 
   <span class="lead-duration duration">0.000</span>
 
