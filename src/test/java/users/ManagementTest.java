@@ -16,7 +16,9 @@ public class ManagementTest {
 
     @Test
     void testParallel(){
-        Results results = Runner.path("classpath:users").outputCucumberJson(true).tags("~@ignore").parallel(4);
+        //Results results = Runner.path("classpath:users").outputCucumberJson(true).tags("~@ignore").parallel(4);
+        Results results = Runner.path("classpath:geonames").outputCucumberJson(true).tags("~@ignore").parallel(4);
+
         generateReport(results.getReportDir());
     }
 

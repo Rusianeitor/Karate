@@ -1,0 +1,846 @@
+17:45:38.576 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:45:38.579 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703630738579
+17:45:38.601 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 18 - ^Get geographical data of a country$
+17:45:39.736 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:45:40.236 [main] DEBUG com.intuit.karate - response time in milliseconds: 498
+1 < 200
+1 < Date: Tue, 26 Dec 2023 22:45:44 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-26 05:51",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-26 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 17:45",
+  "lat": 4
+}
+
+17:45:40.796 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+17:50:13.227 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:50:13.231 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631013230
+17:50:13.251 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 18 - ^Get geographical data of a country$
+17:50:14.349 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:50:14.768 [main] DEBUG com.intuit.karate - response time in milliseconds: 417
+1 < 200
+1 < Date: Tue, 26 Dec 2023 22:50:19 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-26 05:51",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-26 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 17:50",
+  "lat": 4
+}
+
+17:50:15.380 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+17:55:08.748 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:55:08.752 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631308751
+17:55:08.773 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 19 - ^Get geographical data of a country$
+17:55:09.862 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:55:10.323 [main] DEBUG com.intuit.karate - response time in milliseconds: 455
+1 < 401
+1 < Date: Tue, 26 Dec 2023 22:55:15 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips
+1 < Set-Cookie: JSESSIONID=99F37B3FAC0EA33AF172CDC8751FC1B3; Path=/; HttpOnly
+1 < Content-Length: 1641
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Content-Type: text/html;charset=UTF-8
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd ">
+<html>
+<head>
+<title>GeoNames</title>
+<link rel="search" type="application/opensearchdescription+xml" title="geonames" href="http://www.geonames.org/opensearch-description.xml">
+<link href="/geonames.ico" rel="shortcut icon" >
+<link rel="StyleSheet" href="/geonames.css" type="text/css" >
+<link rel="StyleSheet" href="/geonames-index.css" type="text/css" >
+</head>
+<body>
+<div id="top">
+<div id="login-search">
+<a href="https://www.geonames.org/login" title="login or create new user account">login</a>
+</div>
+</div>
+<br><br><br><br>
+<div style="margin:auto; width:500px; padding:40px; text-align:left" class="formTemplateClass">
+Please add a username to each call in order for geonames to be able to identify the calling application and count the credits usage.
+</div>
+<br><br>
+<div style="margin:auto; width:400px" class="formTemplateClass">
+<h4>Login</h4>
+<form name="loginForm" method="post" action="https://www.geonames.org/servlet/geonames?">
+<table style="margin:auto; text-align:left; ">
+<tr><td>Username</td><td><input name="username" value="" size="20" maxlength="20"></td></tr>
+<tr><td>Password</td><td><input type=password name="password"  size="20">
+</td></tr>
+<tr><td></td><td><input type=checkbox name="rememberme" value="1" checked="checked" > <small>remember me on this computer</small>
+</td></tr>
+</table>
+<input type="hidden" name="srv" value="12">
+<input type="submit" value="login">
+</form>
+<small>[<a href="https://www.geonames.org/servlet/geonames?srv=17">I forgot my password</a>]</small>
+</div>
+
+
+</body></html>
+
+
+17:55:10.325 [main] ERROR com.intuit.karate - src/test/java/geonames/get/geographical-data-get.feature:15
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 455, url: http://api.geonames.org/?lng=-72&formatted=true&lat=4&username=karate, response: 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd ">
+<html>
+<head>
+<title>GeoNames</title>
+<link rel="search" type="application/opensearchdescription+xml" title="geonames" href="http://www.geonames.org/opensearch-description.xml">
+<link href="/geonames.ico" rel="shortcut icon" >
+<link rel="StyleSheet" href="/geonames.css" type="text/css" >
+<link rel="StyleSheet" href="/geonames-index.css" type="text/css" >
+</head>
+<body>
+<div id="top">
+<div id="login-search">
+<a href="https://www.geonames.org/login" title="login or create new user account">login</a>
+</div>
+</div>
+<br><br><br><br>
+<div style="margin:auto; width:500px; padding:40px; text-align:left" class="formTemplateClass">
+Please add a username to each call in order for geonames to be able to identify the calling application and count the credits usage.
+</div>
+<br><br>
+<div style="margin:auto; width:400px" class="formTemplateClass">
+<h4>Login</h4>
+<form name="loginForm" method="post" action="https://www.geonames.org/servlet/geonames?">
+<table style="margin:auto; text-align:left; ">
+<tr><td>Username</td><td><input name="username" value="" size="20" maxlength="20"></td></tr>
+<tr><td>Password</td><td><input type=password name="password"  size="20">
+</td></tr>
+<tr><td></td><td><input type=checkbox name="rememberme" value="1" checked="checked" > <small>remember me on this computer</small>
+</td></tr>
+</table>
+<input type="hidden" name="srv" value="12">
+<input type="submit" value="login">
+</form>
+<small>[<a href="https://www.geonames.org/servlet/geonames?srv=17">I forgot my password</a>]</small>
+</div>
+
+
+</body></html>
+
+src/test/java/geonames/get/geographical-data-get.feature:15
+17:55:10.881 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+17:57:02.289 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:57:02.292 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631422292
+17:57:02.312 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 19 - ^Get geographical data of a country$
+17:57:03.409 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:57:03.815 [main] DEBUG com.intuit.karate - response time in milliseconds: 400
+1 < 401
+1 < Date: Tue, 26 Dec 2023 22:57:08 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips
+1 < Set-Cookie: JSESSIONID=B86A1E85621F602E36BBAF0675CB3C86; Path=/; HttpOnly
+1 < Content-Length: 1641
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Content-Type: text/html;charset=UTF-8
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd ">
+<html>
+<head>
+<title>GeoNames</title>
+<link rel="search" type="application/opensearchdescription+xml" title="geonames" href="http://www.geonames.org/opensearch-description.xml">
+<link href="/geonames.ico" rel="shortcut icon" >
+<link rel="StyleSheet" href="/geonames.css" type="text/css" >
+<link rel="StyleSheet" href="/geonames-index.css" type="text/css" >
+</head>
+<body>
+<div id="top">
+<div id="login-search">
+<a href="https://www.geonames.org/login" title="login or create new user account">login</a>
+</div>
+</div>
+<br><br><br><br>
+<div style="margin:auto; width:500px; padding:40px; text-align:left" class="formTemplateClass">
+Please add a username to each call in order for geonames to be able to identify the calling application and count the credits usage.
+</div>
+<br><br>
+<div style="margin:auto; width:400px" class="formTemplateClass">
+<h4>Login</h4>
+<form name="loginForm" method="post" action="https://www.geonames.org/servlet/geonames?">
+<table style="margin:auto; text-align:left; ">
+<tr><td>Username</td><td><input name="username" value="" size="20" maxlength="20"></td></tr>
+<tr><td>Password</td><td><input type=password name="password"  size="20">
+</td></tr>
+<tr><td></td><td><input type=checkbox name="rememberme" value="1" checked="checked" > <small>remember me on this computer</small>
+</td></tr>
+</table>
+<input type="hidden" name="srv" value="12">
+<input type="submit" value="login">
+</form>
+<small>[<a href="https://www.geonames.org/servlet/geonames?srv=17">I forgot my password</a>]</small>
+</div>
+
+
+</body></html>
+
+
+17:57:03.817 [main] ERROR com.intuit.karate - src/test/java/geonames/get/geographical-data-get.feature:15
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 400, url: http://api.geonames.org/?lng=-72&formatted=true&lat=4&username=karate, response: 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd ">
+<html>
+<head>
+<title>GeoNames</title>
+<link rel="search" type="application/opensearchdescription+xml" title="geonames" href="http://www.geonames.org/opensearch-description.xml">
+<link href="/geonames.ico" rel="shortcut icon" >
+<link rel="StyleSheet" href="/geonames.css" type="text/css" >
+<link rel="StyleSheet" href="/geonames-index.css" type="text/css" >
+</head>
+<body>
+<div id="top">
+<div id="login-search">
+<a href="https://www.geonames.org/login" title="login or create new user account">login</a>
+</div>
+</div>
+<br><br><br><br>
+<div style="margin:auto; width:500px; padding:40px; text-align:left" class="formTemplateClass">
+Please add a username to each call in order for geonames to be able to identify the calling application and count the credits usage.
+</div>
+<br><br>
+<div style="margin:auto; width:400px" class="formTemplateClass">
+<h4>Login</h4>
+<form name="loginForm" method="post" action="https://www.geonames.org/servlet/geonames?">
+<table style="margin:auto; text-align:left; ">
+<tr><td>Username</td><td><input name="username" value="" size="20" maxlength="20"></td></tr>
+<tr><td>Password</td><td><input type=password name="password"  size="20">
+</td></tr>
+<tr><td></td><td><input type=checkbox name="rememberme" value="1" checked="checked" > <small>remember me on this computer</small>
+</td></tr>
+</table>
+<input type="hidden" name="srv" value="12">
+<input type="submit" value="login">
+</form>
+<small>[<a href="https://www.geonames.org/servlet/geonames?srv=17">I forgot my password</a>]</small>
+</div>
+
+
+</body></html>
+
+src/test/java/geonames/get/geographical-data-get.feature:15
+17:57:04.370 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+17:58:20.372 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:58:20.376 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631500375
+17:58:20.396 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 19 - ^Get geographical data of a country$
+17:58:21.487 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:58:21.935 [main] DEBUG com.intuit.karate - response time in milliseconds: 446
+1 < 200
+1 < Date: Tue, 26 Dec 2023 22:58:26 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-26 05:51",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-26 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 17:58",
+  "lat": 4
+}
+
+17:58:22.515 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+17:59:55.033 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:59:55.035 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631595035
+17:59:55.056 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 20 - ^Get geographical data of a country$
+17:59:56.182 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:59:56.598 [main] DEBUG com.intuit.karate - response time in milliseconds: 414
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:00:01 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:52",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:00",
+  "lat": 4
+}
+
+17:59:57.203 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+18:00:49.374 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:00:49.377 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631649377
+18:00:49.399 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 20 - ^Get geographical data of a country$
+18:00:50.586 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:00:51.055 [main] DEBUG com.intuit.karate - response time in milliseconds: 464
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:00:55 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:52",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:00",
+  "lat": 4
+}
+
+18:00:51.071 [main] ERROR com.intuit.karate - src/test/java/geonames/get/geographical-data-get.feature:16
+And match $ == responseSuccessful
+match failed: EQUALS
+  $ | not equal | match failed for name: 'countryCode' (MAP:MAP)
+  {"sunrise":"2023-12-27 05:52","lng":-72,"countryCode":"CO","gmtOffset":-5,"rawOffset":-5,"sunset":"2023-12-27 17:45","timezoneId":"America/Bogota","dstOffset":-5,"countryName":"Colombia","time":"2023-12-26 18:00","lat":4}
+  {"sunrise":"##string","lng":"#number","countryCode":"#number","gmtOffset":"#number","rawOffset":"#number","sunset":"##string","timezoneId":"#string","dstOffset":"#number","countryName":"#string","time":"#string","lat":"#number"}
+
+    $.countryCode | not a number (STRING:STRING)
+    'CO'
+    '#number'
+
+src/test/java/geonames/get/geographical-data-get.feature:16
+18:00:51.651 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+18:01:02.661 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:01:02.664 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631662664
+18:01:02.684 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 20 - ^Get geographical data of a country$
+18:01:04.012 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:01:04.424 [main] DEBUG com.intuit.karate - response time in milliseconds: 409
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:01:09 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.46 OpenSSL/1.0.2k-fips
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:52",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:01",
+  "lat": 4
+}
+
+18:01:05.040 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+18:02:29.148 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:02:29.151 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703631749150
+18:02:29.177 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 20 - ^Get geographical data of a country$
+18:02:30.645 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:02:31.322 [main] DEBUG com.intuit.karate - response time in milliseconds: 674
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:02:36 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:52",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:02",
+  "lat": 4
+}
+
+18:02:31.337 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Get geographical data of a country$
+18:02:31.345 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-8&formatted=true&lat=8&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:02:31.740 [main] DEBUG com.intuit.karate - response time in milliseconds: 394
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:02:36 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 06:43",
+  "lng": -8,
+  "countryCode": "CI",
+  "gmtOffset": 0,
+  "rawOffset": 0,
+  "sunset": "2023-12-27 18:22",
+  "timezoneId": "Africa/Abidjan",
+  "dstOffset": 0,
+  "countryName": "Ivory Coast",
+  "time": "2023-12-26 23:02",
+  "lat": 8
+}
+
+18:02:31.741 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 22 - ^Get geographical data of a country$
+18:02:31.749 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72.5&formatted=true&lat=4.2&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:02:32.134 [main] DEBUG com.intuit.karate - response time in milliseconds: 385
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:02:36 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:54",
+  "lng": -72.5,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:47",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:02",
+  "lat": 4.2
+}
+
+18:02:32.136 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 23 - ^Get geographical data of a country$
+18:02:32.143 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=0&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:02:32.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 411
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:02:37 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:45",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:52",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:02",
+  "lat": 0
+}
+
+18:02:32.557 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 24 - ^Get geographical data of a country$
+18:02:32.574 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-8f&formatted=true&lat=8&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:02:32.973 [main] DEBUG com.intuit.karate - response time in milliseconds: 399
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:02:37 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 06:43",
+  "lng": -8,
+  "countryCode": "CI",
+  "gmtOffset": 0,
+  "rawOffset": 0,
+  "sunset": "2023-12-27 18:22",
+  "timezoneId": "Africa/Abidjan",
+  "dstOffset": 0,
+  "countryName": "Ivory Coast",
+  "time": "2023-12-26 23:02",
+  "lat": 8
+}
+
+18:02:32.977 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 25 - ^Get geographical data of a country$
+18:02:32.994 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=80&formatted=true&lat=-75&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:02:33.383 [main] DEBUG com.intuit.karate - response time in milliseconds: 389
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:02:38 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "lng": 80,
+  "countryCode": "AQ",
+  "gmtOffset": 7,
+  "rawOffset": 7,
+  "timezoneId": "Antarctica/Davis",
+  "dstOffset": 7,
+  "countryName": "Antarctica",
+  "time": "2023-12-27 06:02",
+  "lat": -75
+}
+
+18:02:34.160 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
+18:05:07.533 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:05:07.539 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1703631907538
+18:05:08.678 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-8&formatted=true&lat=8&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:05:08.678 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72.5&formatted=true&lat=4.2&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:05:08.678 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=0&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:05:08.678 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-72&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:05:09.117 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 434
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:05:13 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:54",
+  "lng": -72.5,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:47",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:05",
+  "lat": 4.2
+}
+
+18:05:09.117 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 433
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:05:13 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:52",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:45",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:05",
+  "lat": 4
+}
+
+18:05:09.117 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 433
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:05:13 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 05:45",
+  "lng": -72,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-27 17:52",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-26 18:05",
+  "lat": 0
+}
+
+18:05:09.117 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 434
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:05:13 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 06:43",
+  "lng": -8,
+  "countryCode": "CI",
+  "gmtOffset": 0,
+  "rawOffset": 0,
+  "sunset": "2023-12-27 18:22",
+  "timezoneId": "Africa/Abidjan",
+  "dstOffset": 0,
+  "countryName": "Ivory Coast",
+  "time": "2023-12-26 23:05",
+  "lat": 8
+}
+
+18:05:09.150 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-8f&formatted=true&lat=8&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:05:09.164 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=80&formatted=true&lat=-75&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+18:05:09.548 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 397
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:05:14 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-27 06:43",
+  "lng": -8,
+  "countryCode": "CI",
+  "gmtOffset": 0,
+  "rawOffset": 0,
+  "sunset": "2023-12-27 18:22",
+  "timezoneId": "Africa/Abidjan",
+  "dstOffset": 0,
+  "countryName": "Ivory Coast",
+  "time": "2023-12-26 23:05",
+  "lat": 8
+}
+
+18:05:09.549 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 385
+1 < 200
+1 < Date: Tue, 26 Dec 2023 23:05:14 GMT
+1 < Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "lng": 80,
+  "countryCode": "AQ",
+  "gmtOffset": 7,
+  "rawOffset": 7,
+  "timezoneId": "Antarctica/Davis",
+  "dstOffset": 7,
+  "countryName": "Antarctica",
+  "time": "2023-12-27 06:05",
+  "lat": -75
+}
+
+18:05:10.470 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:geonames/get/geographical-data-get.feature

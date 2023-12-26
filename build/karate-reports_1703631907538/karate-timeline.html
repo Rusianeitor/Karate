@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"users\/delete\/user-delete[1:2]","start":1703622319599,"end":1703622321354,"title":"users\/delete\/user-delete[1:2] 15:25:19.599-15:25:21.354 Delete a user"},{"id":2,"group":2,"content":"users\/get\/user-get[1:3]","start":1703622319599,"end":1703622320291,"title":"users\/get\/user-get[1:3] 15:25:19.599-15:25:20.291 Get a user"},{"id":3,"group":3,"content":"users\/get\/user-get[2:8]","start":1703622319599,"end":1703622320318,"title":"users\/get\/user-get[2:8] 15:25:19.599-15:25:20.318 Get a user list"},{"id":4,"group":4,"content":"users\/post\/user-post[1.1:16]","start":1703622319599,"end":1703622320667,"title":"users\/post\/user-post[1.1:16] 15:25:19.599-15:25:20.667 Post a user"},{"id":5,"group":2,"content":"users\/post\/user-post[1.2:17]","start":1703622320297,"end":1703622320961,"title":"users\/post\/user-post[1.2:17] 15:25:20.297-15:25:20.961 Post a user"},{"id":6,"group":3,"content":"users\/post\/user-post[1.3:18]","start":1703622320322,"end":1703622320983,"title":"users\/post\/user-post[1.3:18] 15:25:20.322-15:25:20.983 Post a user"},{"id":7,"group":4,"content":"users\/post\/user-post[2:20]","start":1703622320672,"end":1703622321350,"title":"users\/post\/user-post[2:20] 15:25:20.672-15:25:21.350 Post a user without job"},{"id":8,"group":2,"content":"users\/post\/user-post[3:25]","start":1703622320965,"end":1703622321633,"title":"users\/post\/user-post[3:25] 15:25:20.965-15:25:21.633 Post a user with invalid name"},{"id":9,"group":3,"content":"users\/put\/user-put[1:2]","start":1703622320992,"end":1703622321653,"title":"users\/put\/user-put[1:2] 15:25:20.992-15:25:21.653 Put a user"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
