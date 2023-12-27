@@ -28,4 +28,6 @@ Pasos Gradle:
 7. Crear los archivos .json para comparar
 	Definir los campos opcionales
 8. Ejecutar desde cmd las variables en otros ambientes
-	Ejecutar gradle test --tests ParallelTests -DKarate.env=preproductive
+	Ejecutar gradle test --tests ParallelTests -Dkarate.env=preproductive -Duser=karate -DBaseUrl=http://api.geonames.org/ -i
+
+./gradlew test --tests ParallelTests -Denv=preproductive -Duser=karate -DbaseUrl=http://api.geonames.org/ -i

@@ -15,7 +15,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
-    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    systemProperty "env", System.properties.getProperty("env")
     systemProperty "baseUrl", System.properties.getProperty("baseUrl")
     systemProperty "user", System.properties.getProperty("user")
     outputs.upToDateWhen { false }
