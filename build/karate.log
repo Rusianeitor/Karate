@@ -4604,3 +4604,40 @@ classpath:geonames/get/geographical-data-get.feature:32
 
 
 17:25:04.525 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/users/delete/user-delete.feature
+20:43:18.196 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:43:18.209 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1703900598209
+20:43:18.241 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 38 - ^Get geographical data of Colombia$
+20:43:19.770 [main] DEBUG com.intuit.karate - request:
+1 > GET http://api.geonames.org/timezoneJSON?lng=-74&formatted=true&lat=4&username=karate
+1 > Host: api.geonames.org
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.9)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:43:20.431 [main] DEBUG com.intuit.karate - response time in milliseconds: 659
+1 < 200
+1 < Date: Sat, 30 Dec 2023 01:43:28 GMT
+1 < Server: Apache/2.4.57 (AlmaLinux) mod_jk/1.2.49 OpenSSL/3.0.7
+1 < Access-Control-Allow-Origin: *
+1 < X-Frame-Options: sameorigin
+1 < Cache-Control: no-cache
+1 < Keep-Alive: timeout=5, max=100
+1 < Connection: Keep-Alive
+1 < Transfer-Encoding: chunked
+1 < Content-Type: application/json;charset=UTF-8
+{
+  "sunrise": "2023-12-30 06:01",
+  "lng": -74,
+  "countryCode": "CO",
+  "gmtOffset": -5,
+  "rawOffset": -5,
+  "sunset": "2023-12-30 17:55",
+  "timezoneId": "America/Bogota",
+  "dstOffset": -5,
+  "countryName": "Colombia",
+  "time": "2023-12-29 20:43",
+  "lat": 4
+}
+
+20:43:21.280 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/geonames/get/geographical-data-get.feature
